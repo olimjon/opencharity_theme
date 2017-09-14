@@ -1,0 +1,133 @@
+//Custom Variables for compucorp
+
+//Using Roboto as Museo is not free of charge
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+//Main font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+// Typography
+// -------------------------
+
+$default-text-color:#575656;
+
+@mixin museo-thin($font-size:12pt,$color:$default-text-color){
+  font-family: "Museo Sans W01 Rounded 300", sans-serif;
+  font-weight:300;
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin museo-medium($font-size:12pt,$color:$default-text-color){
+  font-family: museosans, sans-serif;
+  font-weight:500;
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin museo-medium-rounded($font-size:12pt,$color:$default-text-color){
+  font-family: "Museo Sans W01 Rounded 500", sans-serif;
+  font-weight:500;
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin opensans-regular($font-size:12pt,$color:$default-text-color){
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: $font-size;
+  color: $color;
+}
+@mixin museo-semibold($font-size:12pt,$color:$default-text-color){
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: $font-size;
+  color: $color;
+}
+
+// Iconography
+// -------------------------
+
+$icon-font-path:          "../fonts/"; //default: 'bootstrap/'
+
+// Brand colors
+// -------------------------
+$brand-primary:         #41afcb; // blue-green shade , default: #428bca
+$brand-success:         #7dc4a7; // green shade, default: #5cb85c
+$brand-warning:         #DABB24; //default: #f0ad4e
+$brand-danger:          #da6b86; // red shade , default: #d9534f
+
+// Brand colors
+// -------------------------
+
+//Backgrounds
+
+$background-grey:#f1f2f5;
+$background-white:#ffffff;
+$background-blue:#57c0d5;
+$background-footer:#454850;
+
+
+
+
+//Text colors
+
+$text-torqious:#61c0bd;
+$text-white:#ffffff;
+$text-grey:#5b6172;
+$text-blue:#5ac0cf;
+$text-footer-icon:#5bc0c3;
+$text-copyright:#969eb6;
+
+
+$border-grey:#5d5e61;
+$border-light-grey:#d9dadd;
+$border-divider-grey:#f1f2f5;
+$border-footer-divider:#575b64;
+
+
+//Slider pointer links
+$active-slider-link:#5fc0c3;
+$unactive-slider-link:#979eb1;
+
+// Grays
+// -------------------------
+$gray-lighter         : #fbfbfc; // table odd row, default: lighten(#000, 93.5%) !default;
+$gray-light           : #ecedee; // body bg, table border, default: lighten(#000, 60%) !default;   // #999
+$crm_gray-light-alt   : #f0f1f4; // carousel item bg, hr resource bg
+$crm_gray-light-blue  : #757b8e; // scrollbar thumb, pivot table text
+$gray                 : #767b8e; // main text/lighter, menu item bg hover, footer logo, default: lighten(#000, 33.5%) !default; // #555
+$gray-dark            : #555862; // menu bg, default: lighten(#000, 20%) !default
+$gray-darker          : #4c4c5d; // text darker, default: lighten(#000, 13.5%) !default; // #222
+$crm_gray-darker-alt  : #404454; // page title
+$crm_grizzly          : #dcdddd;
+
+$light           : #fff; // well bg, text on dark bg hover
+$light-pale      : #c3cbd6; // text on dark bg
+$light-gray      : #eeeded;
+
+$crm_color-neutral   : #949caa; // gray shade
+
+
+// Brand colors
+// -----------------------------------------------------------------------------
+
+$brand-info:            #57c0d5 !default;
+
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+$body-bg:               #fff !default;
+$text-color:            $gray-dark !default;
+
+// Links
+// -----------------------------------------------------------------------------
+
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+// Iconography
+// -----------------------------------------------------------------------------
+
+$icon-font-name: 'glyphicons-halflings-regular' !default;
+
+

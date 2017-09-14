@@ -1,0 +1,391 @@
+
+// Page Layout
+// -----------------------------------------------------------------------------
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+.l-header{
+  @extend .container;
+}
+
+.l-branding{
+   @extend .row;
+
+  .site-logo img{
+    max-width: 100%;
+  }
+}
+
+
+.pane-myopencharity-myopencharity-main-slider{
+  background:linear-gradient(rgba(50,50,50,.5),rgba(50,50,50,.5)), url(../images/slider-cover.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 28.62rem;
+
+  .pane-content{
+    @extend .container;
+  }
+  .main-slider{
+    @extend .row;
+    text-align: center;
+    color: $text-white;
+  }
+  .main-slider--parallax{
+    h1{
+      @include museo-thin(40pt,$text-white);
+      text-transform: uppercase;
+      padding-top: 54px;
+    }
+    p {
+      max-width: 54%;
+      margin: auto;
+      font-size: 1rem;
+      &.lead{
+        font-size: 1.17rem;
+        letter-spacing: -0.05rem;
+        line-height: 2rem;
+        word-spacing: 0.04rem;
+        padding-bottom: 1.6rem;
+      }
+    }
+  }
+
+}
+
+.pane-myopencharity-myopencharity-event-box{
+  min-height: 7.1875rem;
+  background-color: $background-grey;
+  .pane-content{
+    @extend .container;
+    display: table;
+    height: 7.1875rem;
+  }
+  .event-box{
+    @extend .row;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .event-box--event{
+    float: left;
+  }
+  .event-box--event--title{
+    @include museo-medium(1.02rem,$text-torqious);
+  }
+  .event-box--event--date{
+    @include museo-medium(1.02rem)
+  }
+  .event-box--event--address{
+    @include opensans-regular(.9rem)
+  }
+  .event-box--register{
+    float:right;
+  }
+}
+
+
+
+.pane-views-get-involved-block{
+  padding-bottom: 42px;
+  .pane-content{
+    @extend .container;
+    padding-top:8px;
+  }
+  .view-content{
+    @extend .row;
+    text-align: center;
+  }
+  .views-row{
+    @extend .col-sm-4;
+  }
+  .views-field-field-link{
+    padding-top: 26px;
+    a{
+      @include btn;
+      padding: 0.5rem 2.7rem ;
+    }
+  }
+  .views-field-title{
+    @include museo-medium-rounded(13pt);
+    text-transform: uppercase;
+    padding-top: 28px;
+  }
+  .views-field-field-description{
+    @include opensans-regular(11pt,$text-grey);
+    padding-top: 14px;
+  }
+}
+
+$icons-margin-top:50px;
+
+.pane-myopencharity-myopencharity-mission{
+  background-color: $background-grey;
+  .pane-content{
+    @extend .container;
+  }
+  .icons{
+    background-color: $background-blue;
+    border:10px solid $text-white;
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top:(-$icons-margin-top);
+  }
+
+  .mission{
+    @extend .row;
+    text-align: center;
+    font-size: 10.55pt;
+    padding-bottom:50px;
+    border-bottom:1px solid $border-light-grey;
+
+    p{
+      margin-top: 0;
+      @include opensans-regular(10.55pt,$text-grey);
+      &.lead{
+        /*20% larger*/
+        @include museo-medium(12.66pt,$text-grey);
+        padding-top: 10px;
+      }
+    }
+  }
+  .mission--elems{
+    padding-top: 30px;
+    li{
+      @extend .col-sm-4;
+
+    }
+  }
+  .mission--wrapper{
+    background-color: $background-white;
+    //margin: 0 15px;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: $icons-margin-top;
+    padding-bottom: 26px;
+    border-radius: 5px;
+  }
+
+  .mission--title{
+   @include museo-medium(13pt,$text-blue);
+    padding-top: 6px;
+  }
+  .mission--description{
+      padding-top: 16px;
+      line-height: 1.5em
+  }
+}
+
+
+
+.pane-views-our-members-block{
+  background-color: $background-grey;
+  .pane-content{
+    @extend .container;
+  }
+  .view-our-members{
+    @extend .row;
+  }
+
+  .views-row{
+    width: 20%;
+    text-align: center;
+  }
+  .views-field-field-member-logo{
+    display: inline-block;
+
+    .field-content{
+      text-align: center;
+      height: 110px;
+      line-height: 110px;
+      img{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.pane-views-blog-block{
+  .pane-content{
+    @extend .container;
+    overflow: visible;
+  }
+  .view-blog{
+    @extend .row;
+    overflow: visible;
+  }
+  .result{
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+  }
+  .views-field-title{
+    padding-bottom:8px;
+    border-bottom:1px solid $border-divider-grey;
+  }
+  .views-field-body{
+
+    border-bottom:1px solid $border-divider-grey;
+    min-height: 6rem;
+  }
+  .views-field-created{
+    padding-top:10px;
+  }
+}
+
+.l-footer{
+  background-color: $background-footer;
+  text-align: center;
+
+  .footer--social{
+    border-bottom: 1px solid $border-footer-divider;
+  }
+  .footer--social-icons{
+      color:$text-footer-icon;
+      font-size: 15pt;
+      display: inline-block;
+
+      li{
+        display: table-cell;
+        padding: 22px 11px;
+      }
+  }
+
+  .footer--copyright{
+      font-size: 11pt;
+      color:$text-copyright;
+    a{
+      color: $text-blue;
+    }
+  }
+}
+
+
+//Mobile view fixes
+/* Smartphones (portrait and landscape) ----------- */
+@media  screen and (min-width : 320px) and (max-width : 601px) {
+  .l-header{
+    .site-logo{
+      margin: 1rem;
+      display: block;
+      text-align: center;
+
+      img{
+        width: 50%;
+      }
+    }
+
+    ul{
+
+      li{
+        border-bottom: 1px solid $border-divider-grey;
+        list-style: none;
+        line-height: 3em;
+      }
+      li.last{
+        border: none;
+        line-height: 1em;
+        margin: 1em;
+        text-align: center;
+
+        a{
+          @include btn;
+        }
+      }
+    }
+  }
+  .pane-myopencharity-myopencharity-main-slider{
+    .main-slider--parallax{
+      p {
+        max-width: 99%!important;
+        margin: auto;
+      }
+    }
+  }
+  .pane-myopencharity-myopencharity-event-box{
+    .event-box--register{
+      display: block;
+      float: none!important;
+      margin: 2rem;
+      text-align: center;
+    }
+    .event-box--event{
+      float: none!important;
+      padding-top: 2em;
+    }
+
+  }
+
+  .pane-views-get-involved-block{
+    .views-row{
+      padding-top: 2em;
+    }
+  }
+
+  .pane-myopencharity-myopencharity-mission{
+    .mission--elems{
+      li{
+        padding-top: 2em;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .header--wrapper{
+    transition:all .3s ease;
+    width:100%;
+    background-color: $background-white;
+    &.sticky{
+      position: fixed;
+      z-index: 10;
+    }
+  }
+  .l-header{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .l-branding{
+      width: 100%;
+    }
+    .site-logo img{
+      width: 10rem;
+    }
+
+    ul{
+      float:right;
+      display: flex;
+      align-items: center;
+
+      li{
+        float: left;
+        margin:0;
+        margin-right: 1.4rem;
+        list-style: none;
+        a{
+          @include museo-medium(.90rem);
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+      li.last{
+        margin-right: 0;
+        a{
+          @include btn;
+        }
+      }
+    }
+  }
+}
+
+

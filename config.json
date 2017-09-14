@@ -1,0 +1,40 @@
+{
+  "name": "opencharity_theme",
+  "description": "theme for job chance",
+  "browserSyncProxy" : "http://panopoly.dev",
+  "bowerDir": "./bower_components",
+  "css": {
+    "file" : "opencharity.style.scss",
+    "src": [
+      "scss/**/*.scss"
+    ],
+    "dest": "assets/css",
+    "includePaths": [
+      "./bower_components/font-awesome/scss",
+      "./bower_components/compass-mixins/lib"
+    ]
+  },
+  "js": {
+    "file" : "opencharity.behaviors.js",
+    "src": [
+      "assets/js/**/*.js"
+    ],
+    "dest": "assets/js"
+  },
+  "images": {
+    "src": [
+      "assets/images/**/*"
+    ],
+    "dest": "assets/images/"
+  },
+  "icons":{
+      "src":["assets/images/icon-2x/*.{jpg,png}"],
+      "dest":"assets/images/icon/"
+  },
+  "fonts": {
+    "src": [
+      "./bower_components/font-awesome/fonts/**.*"
+    ],
+    "dest": "./assets/fonts/"
+  }
+}
